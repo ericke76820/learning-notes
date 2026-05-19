@@ -32,3 +32,11 @@ public class Main {
 原始碼檔案要放置在與 package 定義名稱階層相同的資料夾階層。
 
 目前計劃將所有原始碼檔案放在 src 中管理，由於 EX1 類別使用 package 定義在 net.tutorial.example 套件下，EX1.java 就必須放在 src 資料夾中的 net/tutorial/example 資料夾，在沒有工具輔助下，必須手動建立出資料夾，Main 類別使用 package 定義在 net.tutorial 套件下，因此 Main.java 必須放在 src 資料夾中的 net/tutorial 資料夾。
+
+編譯時並不用手動建立對應套件階層的資料夾，若使用 -d 指定位元碼的存放位置，就會自動建立出對應套件階層的資料夾，並將編譯出來的位元碼檔案放置至對應的位置。例如：
+
+# execute a java class file:
+
+PS C:\JAVA> javac -sourcepath src -cp classes -d classes src/net/tutorial/Main.java
+PS C:\JAVA> java -cp classes net.tutorial.Main
+Hello, World
