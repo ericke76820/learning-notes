@@ -40,3 +40,7 @@ public class Main {
 PS C:\JAVA> javac -sourcepath src -cp classes -d classes src/net/tutorial/Main.java
 PS C:\JAVA> java -cp classes net.tutorial.Main
 Hello, World
+
+由於 Main 類別位於 net.tutorial 套件，使用 java 執行程式時，必須指定完全吻合名稱，也就是指定 net.tutorial.Main 這個名稱。
+
+要在套件間共用的類別或方法（Method）必須宣告為 public。
