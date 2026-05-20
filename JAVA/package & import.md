@@ -44,3 +44,21 @@ Hello, World
 由於 Main 類別位於 net.tutorial 套件，使用 java 執行程式時，必須指定完全吻合名稱，也就是指定 net.tutorial.Main 這個名稱。
 
 要在套件間共用的類別或方法（Method）必須宣告為 public。
+
+# 使用 import
+
+使用套件管理，解決了實體檔案與撰寫程式時類別名稱衝突的問題，然而，若每次撰寫程式時，都得鍵入完全吻合名稱，也是件麻煩的事，想想看，有些套件定義的名稱冗長時，單是要鍵入完全吻合名稱得花多少時間。
+
+可以用 import 偷懶一下，例如：
+
+# example:
+
+package net.tutorial;
+
+import net.tutorial.example.EX1;
+
+public class Main {
+    public static void main(String[] args) {
+        EX1.writeLine("Hello, World");
+    }
+}
