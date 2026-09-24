@@ -6,7 +6,7 @@ git init
 # 將所有檔案加入準備區/更新專案 (別忘了那個點 .)
 git add .
 
-# 提交紀錄
+# 提交更新紀錄
 git commit -m "Initial commit: My Streamlit Portfolio"
 
 # 建立連接 (weblink)
