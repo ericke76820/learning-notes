@@ -5,6 +5,7 @@ git init
 
 # 將所有檔案加入準備區/更新專案 (別忘了那個點 .)
 git add .
+git add foldername/filename.dataformal
 
 # 提交更新紀錄
 git commit -m "Initial commit: My Streamlit Portfolio"
