@@ -19,3 +19,7 @@ openclaw daemon start
 # 停止ollama模型
 
 ollama stop qwen2.5:14b
+
+# 開啟openclaw啟用功能終端介面
+
+openclaw onboard
