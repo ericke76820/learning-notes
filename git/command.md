@@ -18,3 +18,6 @@ git branch -M main
 
 # 正式推送檔案
 git push -u origin main
+
+# 會列出含有指定文字的檔名 
+git grep -l -F Select-Object -- src/main/java(檔名) | Select-Object -First 10(只取前十筆)
