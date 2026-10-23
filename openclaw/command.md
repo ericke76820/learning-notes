@@ -13,7 +13,7 @@ openclaw update
 # 驗證版本與診斷
 
 openclaw --version
-openclaw doctor
+openclaw doctor --fix
 
 # 重新啟動服務
 
