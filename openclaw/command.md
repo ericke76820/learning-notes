@@ -7,6 +7,9 @@ taskkill /F /IM node.exe
 
 npm install -g openclaw@latest
 
+# 更新openclaw(recommand)
+openclaw update 
+
 # 驗證版本與診斷
 
 openclaw --version
@@ -23,3 +26,10 @@ ollama stop qwen2.5:14b
 # 開啟openclaw啟用功能終端介面
 
 openclaw onboard
+
+# 設置模型
+openclaw models set ollama/model_name
+
+# 預覽更新計畫
+openclaw update --dry-run
+
